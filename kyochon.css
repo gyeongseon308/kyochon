@@ -1,0 +1,456 @@
+@charset "UTF-8";
+
+*{margin: 0px; padding: 0px;}
+    ul{list-style: none;}
+    img{border: 0; vertical-align: top;}
+    a{text-decoration: none; color:black;}
+    .clearFix:after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    #header{
+        width: 100%;
+        height: 100px;
+    }
+    #header>h1 img{
+        float: left;
+        margin-top: 30px;
+        margin-left: 70px;
+    }
+    #header .menu{
+        margin-top: 15px;
+        float: right;
+        margin-right: 200px;
+    }
+    #header .menu>li{
+        text-align: center;
+        float: left;
+        width: 130px;
+        box-sizing: border-box;
+        padding-top: 30px;
+        margin-left: 20px;
+        height: 60px;
+        position: relative;
+    }
+    #header .menu>li>a{
+        font-weight: 550;
+        font-size: 16pt;
+    }
+    #header .menu li .sub{
+        background-color: #e8bc0d;
+        width: 150px;
+        margin-left: -11px;
+        padding: 20px 0px;
+        line-height: 35px;
+        text-align: center;
+        border-radius: 10px;
+        display: none;
+    }
+    #header .menu li .sub li>a{
+        color: rgb(112, 86, 16);
+        font-size: 14pt;
+        font-weight: 550;
+    }
+    #header .menu li:hover .sub{
+        display: block;
+    }
+    #header .menu li .sub li>a:hover{
+        color: black;
+    }
+    #section .banner{
+        position: absolute;
+        top:150px;
+        right: 100px;
+        width: 110px; height: 110px;
+        position: fixed;
+    }
+    #section a img{width: 100%;}
+    #section .main1{
+        background-image: url(imags/main1.jfif);
+        width: 100%; height: 1080px;
+        margin: 0px auto;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        text-align: center; color: white;
+        }
+    #section .main1>h1{
+        font-size: 70px;
+        padding-top: 450px;
+        padding-bottom: 30px;
+        }
+    #section .main1 .box{border-top: 10px solid red; width: 800px}
+    #section .main1>p{
+        font-size: 15px;
+        margin-top: 15px;
+        line-height: 30px;
+        font-size: 18px;
+        margin: 0 auto; padding-top: 30px;
+    }
+    #section .main2{
+        background-image: url(imags/main2.jfif);
+        width: 100%; height: 1080px;
+        margin: 0px auto;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        text-align: center; color: white;
+    }
+    #section .main2>h1{
+        font-size: 70px;
+        padding-top: 450px;
+        padding-bottom: 30px;
+    }
+    #section .main2 .box{border-top: 10px solid red; width: 800px}
+    #section .main2>p{
+        font-size: 15px;
+        margin-top: 15px;
+        line-height: 30px;
+        font-size: 18px;
+        margin: 0 auto; padding-top: 30px;
+    }
+    #section .main3{
+        background-image: url(imags/main3.jfif);
+        width: 100%; height: 1080px;
+        margin: 0px auto;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        text-align: center; color: white;
+    }
+    #section .main3>h1{
+        font-size: 70px;
+        padding-top: 450px;
+        padding-bottom: 30px;
+    }
+    #section .main3 .box{border-top: 10px solid red; width: 800px}
+    #section .main3>p{
+        font-size: 15px;
+        margin-top: 15px;
+        width: 800px;
+        line-height: 30px;
+        font-size: 18px;
+        margin: 0 auto; padding-top: 30px;
+    }
+    #section .brand{
+        width: 100%;
+        margin: 0px auto;
+    }
+    #section .brand h1{
+        text-align: center;
+        font-size: 70px;
+        font-weight: 600;
+        padding: 60px 0px;
+    }
+    #section .brand .brand_name{
+        width: 1200px;
+        margin: 0px auto;
+        box-sizing: border-box;
+    }
+    #section .brand .brand_name li{
+        float: left;
+        width: 220px; height: 120px;
+        margin-left: 80px;
+    }
+    #section .brand .brand_name li:first-child{margin-top: 40px;}
+    #section .brand .brand_name li:last-child{margin-top: 30px;}
+    #section .brand_chicken{
+        width: 1310px;
+        margin: 0px auto;
+    }
+    #section .brand_chicken li{
+        float: left;
+        padding-left: 20px;
+        box-sizing: border-box;
+    }
+    #section .brand_chicken li>img{
+         width: 300px; height: 290px;
+    }
+    #section .brand_chicken li>p{
+        margin-top: 20px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    /*------------ 스토어 시작 --------------*/
+    #section .store_all_1{
+        width: 1100px;
+        margin: 0px auto;
+    }
+    #section .store_all_1>h1{
+        text-align: center;
+        font-size: 60px;
+        margin: 60px 0px;
+    }
+    #section .store_all_1 .store{
+        width: 571px; height: 323px;
+        float: left;
+    }
+        
+    #section .store_all_1 img{
+        width: 571px; height: 400px;
+        }
+    #section .store_con1 .s_c_1{
+        float: left;
+        width: 460px;
+        box-sizing: border-box;
+        margin-top: 40px;
+        margin-right: 50px;
+    }
+    #section .store_con1 .s_c_1>h3{
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+    #section .store_con1 .s_c_1>p{
+        font-size: 20px;
+    }
+    #section .store_con1 .s_c_1>input{
+        background-color: #e8bc0d;
+        border: 1px solid rgba(128, 128, 128, 0);
+        width: 120px; height: 40px;
+        margin-top: 30px;
+        border-radius: 10px;
+        font-size: 15px;
+    }
+    #section .store_all_2{
+        width: 1200px;
+        margin: 0px auto;
+    }
+    #section .store_all_2 a>img{
+        width: 570px; height: 400px;
+        float: left;
+    }
+    #section .store_all_2 .store_con2{
+        float:left;
+        width: 570px;
+        height: 400px;
+        box-sizing: border-box;
+        margin-top: 40px;
+        margin-left: 50px;
+    }
+    #section .store_all_2 .store_con2 .s_c_2>h3{
+        font-size: 30px;
+        margin-bottom: 20px;
+        margin-top: 15px;
+    }
+    #section .store_all_2 .store_con2 .s_c_2>p{
+        font-size: 20px;
+        margin-top: 20px; */
+        box-sizing:border-box;
+    }
+    #section .store_all_2 .store_con2 .s_c_2>input{
+        background-color: #e8bc0d;
+        border: 1px solid rgba(128, 128, 128, 0);
+        width: 120px; height: 40px;
+        margin-top: 40px;
+        border-radius: 10px;
+        font-size: 15px;
+    }
+/* --------------------스토어끝------------------ */
+    #section .story_all{
+        position: relative;
+        z-index: 0;
+    }
+    #section .story_all>h1{
+        text-align: center;
+        font-size: 60px;
+        margin-top: 100px;
+        margin-bottom: 70px;
+    }
+
+    #section .story_con li{
+        float: left;
+        margin-top: 20px;
+        margin-left: 5px;
+    }
+    #section .story_con li img{
+        width: 280px;
+        height: 480px;
+        object-fit: cover;
+        padding-left: 10px;
+    }
+    #section .story_con li>h3{
+        padding-left: 30px;
+        margin-top: 5px;
+        font-weight: bold;
+    }
+    #section .story_con li>p{
+        margin-top: 20px;
+        font-size: 12pt;
+        font-weight: bold;
+        padding-left: 30px;
+    }    
+    #section .story_con{
+        width: 1200px;
+        margin: 0px auto;
+        box-sizing: border-box;
+        padding-bottom: 50px;
+    }
+    #section .story_all .arrow img:first-child{
+        position: absolute;
+        top:400px;
+        left: 250px;
+        z-index: 2;
+    }
+    #section .story_all .arrow img:last-child{
+        position: absolute;
+        top:400px;
+        right: 250px;
+        z-index: 2;
+    }
+        
+    #section .story_all>input{
+        background-color: #ffffff00;
+        width: 160px; height: 45px;
+        box-sizing: border-box;
+        font-size: 15px;
+        font-weight: bold;
+        display: block;
+        margin: 0px auto;
+        transition: transform 0.2s;
+        margin-bottom: 50px;
+        cursor: pointer;
+    }
+        
+    #section .story_all>input:hover{
+        background-color: black;
+        transform:all 0.3s;
+        color: white;}
+
+    #section .esg_all h1{
+        text-align: center;
+        font-size: 70px;
+        padding-top: 100px;
+        margin-bottom: 70px;
+    }
+    #section .esg_all ul{
+        width:1260px;
+        margin: 0px auto;
+    }
+    
+    #section .esg_all ul li{
+        float: left;
+        margin-left: 20px;
+        width: 400px;
+        height: 470px;
+        text-align: center;
+        /* border: 1px solid gray; */
+        background-color: white;
+        overflow: hidden;
+        border-radius: 25px;
+        }
+    #section .esg_all ul li>p:nth-of-type(1){
+        margin-top: 40px;
+        font-size: 20px;
+    }
+    #section .esg_all ul li>p:last-child{
+        margin-top: 20px;
+        font-size: 15px;}
+    #section .esg_all ul li>img{
+        width: 400px;
+        cursor: pointer;
+    }    
+    #section .esg_all{
+        background-image:url(imags/bg_esg.jpg);
+        width: 100%; height: 1000px;
+        background-size: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #section .event_all{
+        overflow: hidden;
+        margin-bottom: 70px;
+    }
+    #section .event_all h1{
+        text-align: center;
+        font-size: 55pt;
+        padding: 70px;  
+    }
+    #section .event_all img{
+        width: 1080px; height: 384px;
+        display: block;
+        margin: 0px auto;
+    }
+    #section .instagram_all{
+        background-color:rgb(255, 204, 0);
+        width: 100%; height: 1000px;
+    }
+    #section .instagram_all ul{
+        width: 1200px;
+        margin: 0px auto;
+    }
+    #section .instagram_all .insta_text{
+        text-align: center;
+        font-size: 30px;
+        padding: 70px;
+    }
+    #section .instagram_all .insta_text .insta_2{color: white;}
+
+    #section .instagram_all ul li{
+        float: left;
+        text-align: center;
+        margin-left: 20px;
+        background-color: white;
+        height: 500px;
+    }
+    #section .instagram_all ul li>img{
+        width: 372px; height: 365px;
+    }
+    #section .instagram_all ul li>h3{
+        margin-top: 30px;}
+    #section .instagram_all ul li>p{
+        margin-top: 15px;
+    }
+    #footer{
+        width:1320px;
+        margin:0px auto;
+        padding-top: 50px;
+    }
+    #footer .ft_1{
+        float: left;
+    }
+    #footer .ft_2{
+        float: left;
+        margin-left: 30px;
+        font-size: 18px;
+    }
+    #footer .ft_2 .ft_number_1>li
+    {
+        padding-left: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    #footer .ft_2 .ft_number_2>li
+    {
+        float: left;
+        padding-left: 20px;
+        font-size: 15px;
+        font-weight: bold;
+        margin: 15px 0px;
+    }
+    #footer .ft_2 ul a{color: #e8bc0d;}
+    #footer .ft_2 .ft_number_3{
+        float: left;
+        margin-left: 20px;
+        width: 800px;
+        font-size: 14px;
+        margin-bottom: 50px;
+        line-height: 23px;}
+
+    #footer .ft_2 .ft_number_3 span{
+        font-weight: bold;
+    }
+    #footer .ft_2 .ft_number_3>.ft3_1
+    {
+        float: left;
+    }
+    #footer .ft_2 .ft_number_3{
+        float: left;
+        margin-right: -15px;
+    }
+    #footer .ft_3 li{
+        float: left;
+        margin-left: 15px;
+    }
